@@ -1,0 +1,118 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	overflow-x: hidden;
+  }
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    transition: 3s opacity;
+    background-image: url(https://samherbert.net/svg-loaders/svg-loaders/circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.fade{
+    opacity: 0;
+}
+nav{
+	width: 100%;
+	font-size: 20px;
+  }
+  
+header div{
+	width: 100%;
+}
+
+header div img{
+	width: 100%;
+}
+h2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      text-align: center;
+  
+  }
+/* Для слайдера кухни */
+.gallery{
+	min-height: 100vh;
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.coloum{
+	display: flex;
+	margin: 0 2% 3% 2%;
+	-webkit-transition: all 0.3s ease;;
+	-moz-transition: all 0.3s ease;;
+	-o-transition: all 0.3s ease;;
+	transition: all 0.3s ease;
+}
+
+
+.gallery .coloum img{
+
+	width: 350px;
+	height: 350px; 
+}
+.gallery .coloum:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.1);
+
+  }
+  .up{
+	background-color: rgba(96, 180, 206, 0.966);
+	
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 70%;
+	opacity: 0.5;
+  }
+  .up:hover{
+	opacity: 1;
+	transition: opacity 1s;
+  }
+  .up a{
+	color: #fff;
+	padding: 20px;
+	display: inline-block;
+	font-size: 30px;
+  
+  }
+  @media screen and (max-width: 400px) {
+	
+
+	  
+	.gallery .coloum:hover {
+		-webkit-transform: scale(1.0)!important;
+		-ms-transform: scale(1.0)!important;
+		transform: scale(1.0)!important;
+		}
+	
+
+
+
+  }
+  @media screen and (max-width: 600px) {
+	.coloum{
+		margin-bottom: 50px;
+	}
+	.up a{
+		color: #fff;
+		padding: 20px;
+		display: inline-block;
+		font-size: 10px;
+	}
+  }

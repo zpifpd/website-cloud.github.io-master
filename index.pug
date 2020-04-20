@@ -1,0 +1,15 @@
+- is = [ //https://unsplash.com/@nicolehoneywill
+-  "image/1.jpg",
+-  "image/2.jpg",
+-  "image/3.jpg",
+-  "image/4.jpg",
+-  "image/5.jpg"
+- ]
+
+.w
+  .ts
+    - n = 0
+    while ++n <= 5
+      input(type="radio",id=`c${n}`,name="ts",checked=n==1)
+      label.t(for=`c${n}`)
+        img(src=is[n-1])
